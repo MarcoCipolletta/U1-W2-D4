@@ -166,3 +166,12 @@ console.log("     poi è:", cutString("123456789"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const giveMeRandom = function (n) {
+  const array = [];
+  for (let i = 0; i < n; i++) {
+    array.push(Math.floor(Math.random() * 11));
+  }
+  return array;
+};
+console.log(giveMeRandom(5));
