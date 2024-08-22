@@ -100,6 +100,18 @@ console.log(epify(fraseRndm));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const check3and7 = function (n) {
+  if (n % 3 === 0) {
+    console.log("il numero", n, "è multiplo di 3");
+  } else if (n % 7 === 0) {
+    console.log("il numero", n, "è multiplo di 7");
+  } else {
+    console.log("il numero", n, "non è ne multiplo di 3 ne di 7");
+  }
+};
+
+check3and7(rndmNmbr4);
+
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
