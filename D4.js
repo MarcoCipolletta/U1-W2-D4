@@ -72,12 +72,26 @@ const rndmNmbr4 = Math.floor(Math.random() * 1000);
 console.log("buondary con n=", rndmNmbr4, "allora", boundary(rndmNmbr4));
 
 /* ESERCIZIO 5
- Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
- La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
- ritornare la stringa originale senza alterarla.
+Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
+La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
+ritornare la stringa originale senza alterarla.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const frasi = ["EPICODE è una bella scuola", "ha la sede a Roma"];
+const rndmNmbr5 = Math.floor(Math.random() * frasi.length);
+const fraseRndm = frasi[rndmNmbr5];
+console.log(fraseRndm);
+const epify = function (stringa) {
+  if (stringa.search("EPICODE") === 0) {
+    return stringa;
+  } else {
+    const newfrase = "EPICODE " + stringa;
+    return newfrase;
+  }
+};
+
+console.log(epify(fraseRndm));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
