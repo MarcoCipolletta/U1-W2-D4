@@ -4,6 +4,12 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const area = function (l1, l2) {
+  return l1 * l2;
+};
+
+console.log("area", area(5, 7) + "cm²");
+
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
  La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
