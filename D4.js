@@ -154,6 +154,7 @@ console.log("     ", upperFirst("tutte le parole hanno la iniziale maiuscola"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 const cutString = function (string) {
   console.log("prima è: ", string);
 
@@ -161,6 +162,7 @@ const cutString = function (string) {
   return newstring;
 };
 console.log("     poi è:", cutString("123456789"));
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
