@@ -133,6 +133,21 @@ reverseString("EPICODE" /*scrivi quello che vuoi */);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const upperFirst = function (string) {
+  console.log("prima è", string);
+
+  if (string[0].toLowerCase() >= "a" && string[0].toLowerCase() <= "z") {
+    let newstring = string[0].toUpperCase() + string.slice(1);
+    console.log(newstring);
+    // for (let i = 0; i < newstring.length; i++) {}
+  }
+};
+
+upperFirst("ciao");
+
+const prova = "ciao è luca";
+console.log(prova[4], prova[0].toUpperCase());
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
