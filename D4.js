@@ -30,14 +30,28 @@ const crazySum = function (num1, num2) {
 const rndmNmbr1 = Math.floor(Math.random() * 5 + 1);
 const rndmNmbr2 = Math.floor(Math.random() * 5 + 1);
 
-console.log("     crazySum nmbr1", rndmNmbr1, "nmbr2", rndmNmbr2, "total", crazySum(rndmNmbr1, rndmNmbr2));
+console.log("     crazySum num1", rndmNmbr1, "num2", rndmNmbr2, "total", crazySum(rndmNmbr1, rndmNmbr2));
 
 /* ESERCIZIO 3
- Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
- Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
+Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
+Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const crazyDiff = function (num1) {
+  if (num1 <= 19) {
+    console.log("crazyDiff numero <= 19");
+    return Math.abs(num1 - 19);
+  } else {
+    console.log("crazyDiff numero > 19");
+    return Math.abs(num1 - 19) * 3;
+  }
+};
+
+const rndmNmbr3 = Math.floor(Math.random() * 100);
+
+console.log("     crazyDiff num1", rndmNmbr3, "total", crazyDiff(rndmNmbr3));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
