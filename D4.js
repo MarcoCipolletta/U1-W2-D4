@@ -91,7 +91,7 @@ const epify = function (stringa) {
   }
 };
 
-console.log(epify(fraseRndm));
+console.log("     ", epify(fraseRndm));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -135,18 +135,18 @@ reverseString("EPICODE" /*scrivi quello che vuoi */);
 
 const upperFirst = function (string) {
   console.log("prima è", string);
-
-  if (string[0].toLowerCase() >= "a" && string[0].toLowerCase() <= "z") {
-    let newstring = string[0].toUpperCase() + string.slice(1);
-    console.log(newstring);
-    // for (let i = 0; i < newstring.length; i++) {}
+  let word = string.trim().split(" ");
+  string = "";
+  for (let i = 0; i < word.length; i++) {
+    word[i] = word[i][0].toUpperCase() + word[i].slice(1, word[word.length]);
+    if (i === word.length - 1) {
+      string += word[i];
+    } else string += word[i] + " ";
   }
+  return string;
 };
 
-upperFirst("ciao");
-
-const prova = "ciao è luca";
-console.log(prova[4], prova[0].toUpperCase());
+console.log("     ", upperFirst("tutte le parole hanno la iniziale maiuscola"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
