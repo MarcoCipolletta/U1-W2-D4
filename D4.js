@@ -83,7 +83,7 @@ const rndmNmbr5 = Math.floor(Math.random() * frasi.length);
 const fraseRndm = frasi[rndmNmbr5];
 console.log(fraseRndm);
 const epify = function (stringa) {
-  if (stringa.search("EPICODE") === 0) {
+  if (stringa.search("EPICODE") === 0 /*quello corretto era (string.stratsWtih("EPICODE")) */) {
     return stringa;
   } else {
     const newfrase = "EPICODE " + stringa;
@@ -138,7 +138,7 @@ const upperFirst = function (string) {
   let word = string.trim().split(" ");
   string = "";
   for (let i = 0; i < word.length; i++) {
-    word[i] = word[i][0].toUpperCase() + word[i].slice(1, word[word.length]);
+    word[i] = word[i][0].toUpperCase() + word[i].slice(1);
     if (i === word.length - 1) {
       string += word[i];
     } else string += word[i] + " ";
