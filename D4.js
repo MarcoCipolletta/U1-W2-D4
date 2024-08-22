@@ -18,6 +18,20 @@ console.log("area", area(5, 7) + "cm²");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const crazySum = function (num1, num2) {
+  if (num1 !== num2) {
+    console.log("crazySum numeri diversi");
+    return num1 + num2;
+  } else {
+    console.log("crazySum numeri uguali");
+    return (num1 + num2) * 3;
+  }
+};
+const rndmNmbr1 = Math.floor(Math.random() * 5 + 1);
+const rndmNmbr2 = Math.floor(Math.random() * 5 + 1);
+
+console.log("     crazySum nmbr1", rndmNmbr1, "nmbr2", rndmNmbr2, "total", crazySum(rndmNmbr1, rndmNmbr2));
+
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
