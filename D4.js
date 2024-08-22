@@ -118,6 +118,14 @@ check3and7(rndmNmbr4);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const reverseString = function (string) {
+  console.log("prima è", string);
+  const newstring = string.split("").reverse().join("");
+  console.log("     dopo è", newstring);
+};
+
+reverseString("EPICODE" /*scrivi quello che vuoi */);
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
