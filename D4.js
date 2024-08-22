@@ -27,8 +27,8 @@ const crazySum = function (num1, num2) {
     return (num1 + num2) * 3;
   }
 };
-const rndmNmbr1 = Math.floor(Math.random() * 5 + 1);
-const rndmNmbr2 = Math.floor(Math.random() * 5 + 1);
+const rndmNmbr1 = Math.ceil(Math.random() * 5);
+const rndmNmbr2 = Math.ceil(Math.random() * 5);
 
 console.log("     crazySum num1", rndmNmbr1, "num2", rndmNmbr2, "total", crazySum(rndmNmbr1, rndmNmbr2));
 
@@ -54,11 +54,22 @@ const rndmNmbr3 = Math.floor(Math.random() * 100);
 console.log("     crazyDiff num1", rndmNmbr3, "total", crazyDiff(rndmNmbr3));
 
 /* ESERCIZIO 4
- Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
- se n è uguale a 400.
+Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
+se n è uguale a 400.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const boundary = function (n) {
+  if ((n > 20 && n <= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+};
+const rndmNmbr4 = Math.floor(Math.random() * 1000);
+
+console.log("buondary con n=", rndmNmbr4, "allora", boundary(rndmNmbr4));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
