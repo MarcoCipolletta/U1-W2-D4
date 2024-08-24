@@ -6,6 +6,32 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
+const giveMeRandom = function (n = 10) {
+  const array = [];
+  for (let i = 0; i < n; i++) {
+    array.push(Math.floor(Math.random() * 11));
+  }
+  return array;
+};
+
+const casualArray = giveMeRandom();
+
+const checkArray = function (array) {
+  let susumGt5 = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < 5) {
+      console.log(array[i], " è minore di 5");
+    } else {
+      console.log(array[i], " è maggiore di 5");
+      susumGt5 += array[i];
+    }
+  }
+  return susumGt5;
+};
+console.log(casualArray);
+
+console.log("       ", checkArray(casualArray));
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 2
