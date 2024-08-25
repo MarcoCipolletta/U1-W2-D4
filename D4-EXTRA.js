@@ -153,6 +153,27 @@ console.log(latestShoppingCart(shoppingCart));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const loopUntil = function (x = 5) {
+  if (x < 0 || x > 9) {
+    console.log("Il valore deve essere compreso tra 0 e 9");
+  } else {
+    let consecutiveCount = 0;
+    while (consecutiveCount < 3) {
+      const randomNum = Math.floor(Math.random() * 10);
+      console.log(randomNum);
+
+      if (randomNum > x) {
+        consecutiveCount++;
+        console.log("   ", consecutiveCount, "volta");
+      } else {
+        consecutiveCount = 0;
+      }
+    }
+  }
+};
+
+loopUntil(2);
+
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
