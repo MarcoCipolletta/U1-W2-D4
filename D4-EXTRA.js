@@ -200,6 +200,24 @@ console.log("la media è", average(myArray));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let stringArray = ["a", "hello", "JavaScript", "world", "epicode", "learn", "programming nel chill fantastico", "xtra", "code", "marco cipolletta"];
+const longest = function (arr) {
+  let longestStr = "";
+  let indexLongestStr = 0;
+  let lengthArr = 0;
+  for (let i = 0; i < stringArray.length; i++) {
+    if (arr[i].length > lengthArr) {
+      longestStr = arr[i];
+      indexLongestStr = i;
+      lengthArr = arr[i].length;
+    }
+  }
+  const result = longestStr + " in posizione " + indexLongestStr;
+  return result;
+};
+
+console.log(longest(stringArray));
+
 /* EXTRA 9
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
