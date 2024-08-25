@@ -139,6 +139,13 @@ maxShoppingCart(shoppingCart, "price");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const latestShoppingCart = function (arr) {
+  const lastElement = arr[arr.length - 1];
+  return lastElement;
+};
+
+console.log(latestShoppingCart(shoppingCart));
+
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
