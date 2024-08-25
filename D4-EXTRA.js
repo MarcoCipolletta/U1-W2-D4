@@ -97,6 +97,20 @@ console.log("extra 2", shoppingCartTotal());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const newItem = {
+  price: 23,
+  name: "set di bicchieri",
+  id: "casa",
+  quantity: 223
+};
+
+const addToShoppingCart = function (list, obj) {
+  list.push(obj);
+  console.log(list, list.length);
+};
+
+addToShoppingCart(shoppingCart, newItem);
+
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "maxShoppingCart" che riceve l'array "shoppingCart" e ritorna l'oggetto più costoso in esso contenuto.
