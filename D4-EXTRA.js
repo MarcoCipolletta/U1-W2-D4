@@ -179,6 +179,20 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const myArray = ["world", 10, "learn", "epicode", 7, "JavaScript", 74, true, "code", 16, 98, "hello", 42, "extra", 3, 55, 25, 6, 5, false];
+const average = function (arr) {
+  let sum = 0;
+  let nmbrCounter = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    if (typeof myArray[i] === "number") {
+      sum += myArray[i];
+      nmbrCounter++;
+    }
+  }
+  return sum / nmbrCounter;
+};
+// average(myArray);
+console.log("la media è", average(myArray));
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
