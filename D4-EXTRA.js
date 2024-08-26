@@ -224,6 +224,17 @@ console.log(longest(stringArray));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const antiSpam = function (emailContent) {
+  if (emailContent.search(/spam/i) !== -1 || emailContent.search(/scam/i) !== -1) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
+let email = "questa non è spam";
+
+console.log(antiSpam(email));
 
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
@@ -240,3 +251,19 @@ console.log(longest(stringArray));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function matrixGenerator(x, y) {
+  let matrix = [];
+
+  for (let i = 0; i < x; i++) {
+    let row = [];
+    for (let j = 0; j < y; j++) {
+      row.push(`${i}-${j}`);
+    }
+    matrix.push(row);
+  }
+
+  return matrix;
+}
+
+console.log(matrixGenerator(3, 4));
