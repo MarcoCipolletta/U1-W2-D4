@@ -255,10 +255,10 @@ console.log(antiSpam(email));
 function matrixGenerator(x, y) {
   let matrix = [];
 
-  for (let i = 0; i < x; i++) {
+  for (let i = 0; i < y; i++) {
     let row = [];
-    for (let j = 0; j < y; j++) {
-      row.push(`${i}-${j}`);
+    for (let j = 0; j < x; j++) {
+      row.push(`${i}${j}`);
     }
     matrix.push(row);
   }
